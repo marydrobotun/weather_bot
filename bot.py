@@ -26,4 +26,9 @@ def func(message):
     if description == 'Rain':
         bot.send_message(message.chat.id, emoji.emojize('Сейчас в городе ' + city + ' идет дождь. Не забудьте зонтик!:umbrella:'))
 
-bot.polling(none_stop=True)
+while True:
+    try:
+        bot.polling(none_stop=True)
+    except Exception as e:
+        logger.error(e)
+        time.sleep(15)
