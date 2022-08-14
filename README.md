@@ -20,3 +20,5 @@ weather_key = 'your key for https://openweathermap.org/'
 ```
 python3 bot.py
 ```
+# Где посмотреть
+[Вот тут](https://t.me/weather_by_mary_bot)
